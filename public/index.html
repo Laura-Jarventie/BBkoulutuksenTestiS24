@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentaatio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>OMA OPE</h1>
+    <p>Tervetuloa OmaOpeen! Olen ihka oma opettajasi Kuura, joka kyselee sinulta kysymyksiä läksy- tai koealueestasi.</p>
+    <p>Lisää tästä kuvat läksyistäsi tai koealueestasi, josta kyselen.</p>
+    <div class="input-container">
+    <input class="form-control" id="image-input" type="file" id="formFileMultiple" multiple>
+    <button id="send-image-button">Lähetä tiedostot</button>
+    </div>
+
+     <div class="chat-container"> 
+     <div id="chatbox" class="chatbox">
+     <!-- ChatGPT answer will appear here -->
+     </div>
+     <div class="input-container">
+     <input type="text" id="user-input" placeholder="Kysy jotain...">
+     <!-- Question from user will appear here -->
+     <button id="send-button">Lähetä</button>
+    </div>
+     </div>
+    <script src="script.js"></script>
+</body>
+</html>
