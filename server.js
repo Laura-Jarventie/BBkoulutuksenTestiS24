@@ -36,15 +36,16 @@ app.post('/upload', upload.array('images', 10), async (req, res) => {
   }
 
   try {
-    const texts = await Promise.all(files.map(async file => {
+    const texts = await Promise.all(files.map(async (file, index) => {
       const imagePath = file.path;
       const [result] = await client.textDetection(imagePath);
       const detections = result.textAnnotations;
       fs.unlinkSync(imagePath); // Poista väliaikainen tiedosto
-      return detections.length > 0 ? detections[0].description : '';
+      return `Tiedosto ${index + 1}:\n${detections.length > 0 ? detections[0].description : ''}`;
     }));
 
-    combinedText = texts.join(' ');
+    //combinedText = texts.join(' ');
+    combinedText = texts.join('\n\n');
    
 
     console.log('OCR Combined Text:', combinedText);
@@ -59,7 +60,7 @@ app.post('/upload', upload.array('images', 10), async (req, res) => {
       },
       body: JSON.stringify({
         model: 'gpt-4o-mini',
-        messages: context.concat([{ role: 'user', content: 'Luo yksi yksinkertainen ja selkeä koetehtävä ja sen vastaus yllä olevasta tekstistä suomeksi. Kysy vain yksi asia kerrallaan.' }]),
+        messages: context.concat([{ role: 'user', content: 'Luo yksi yksinkertainen ja selkeä koetehtävä ja sen vastaus yllä olevasta tekstistä suomeksi: "${combinedText}". Kysy vain yksi asia kerrallaan.' }]),
         max_tokens: 150
       })
     }); 
@@ -118,6 +119,7 @@ app.post('/check-answer', async (req, res) => {
       model: 'gpt-4',
       messages: [
       { role: 'system', content: 'Olet aina ystävällinen opettaja joka arvioi oppilaan vastauksen kohteliaaseen sävyyn.' },
+      { role: 'system', content: 'Olet auttamassa oppilasta vastaamaan kysymyksiin. Muodosta kysymys jokaisesta annetusta tekstiosasta: "${combinedText}".' },
       { role: 'user', content: `Kysymys: ${currentQuestion}` },
       { role: 'user', content: `Oikea vastaus: ${correctAnswer}` },
       { role: 'user', content: `Opiskelijan vastaus: ${userAnswer}` },
@@ -155,7 +157,7 @@ app.post('/check-answer', async (req, res) => {
       },
       body: JSON.stringify({
         model: 'gpt-4o-mini',
-        messages: context.concat([{ role: 'user', content: 'Luo toinen yksinkertainen ja selkeä koetehtävä ja sen vastaus yllä olevasta tekstistä suomeksi. Kysy vain yksi asia kerrallaan.' }]),
+        messages: context.concat([{ role: 'user', content: 'Luo toinen yksinkertainen ja selkeä koetehtävä ja sen vastaus yllä olevasta tekstistä suomeksi: ${randomText}. Kysy vain yksi asia kerrallaan.' }]),
         max_tokens: 150
       })
     }); 

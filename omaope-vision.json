@@ -1,0 +1,13 @@
+{
+    "type": "service_account",
+    "project_id": "omaope-vision",
+    "private_key_id": "ddc64e9abeea6e764df5953e0966be490ce64104",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCpL8BZm7kz0TuY\nOcV0kjFGkYJ9tkl9Zn11MRZ1Ldgnc0+G30W89WvHwgXFt2L+JNuvm+oPHJ1WxoAi\n4jhliA3OYx8LAY8KhqNv2WmK57SS1ygSnLu6OIXARLH11S2zREfLhbTat77vpIM/\nvjOmysv3CPyvh+Xl0bxhHlDTYHvkYhxx2nBn9RAOwxRvClaFcLO+7bLbafywWb03\nCmQbf3bdrJnHLGrceHcofcF60yvVZJ6KCcCVNlk8SWwF7amlyh5uuzXbtR92RNmG\nEhRHd04lRmhoO4cii7Y/6JAprkrglHHFTN+bca23Flc24eQ/BBQdOOPF34zmKyXY\nbQV0nyTxAgMBAAECggEAGg03zbSMZp270vtmW8ZdHxQt50Sn+U7MV7zYy+9kvuJj\nJw3/U5Lo50gJkoHkFOVBDL/x4STTV3bWaUizTXMPSS37LDsvtvu3c/Qi69g09n15\n9q+6uniUo+AQFR4f3OBRO9YZXKp5lLYc3bZghrjogmAYZMEE1ggfPUcpQ/sx6J8w\nPyzN31t4c1tVMN7TVGVJeyiFZz6gNWp/5dU0BMrm7zUm6Cs1Tf5mwuIFUhBnH+Mx\n7ehFel0MLDqsMCuoXFd/AOBdzT3zdrWuxijgrBscAB2exuPsWUHptydQ5c7WexAm\nD0o/gTJI+2nkSiuK3Ms4AR/pbza+ogJGGDWFKcqidwKBgQDtz+9PI2XiGswNqYG4\njavtVV/7UI4NAvhL8LQzpdbayPrXMvUS5tTn9DMqsgtn+o5eXtpynSyLtGPjIMEE\nEOsncwOxK/UZ/SepAbDR4tk4MjkNlCGMB0BPgqPRjlmyrxaBTLC5YWBisrx5rCau\nBZXl2BoYd7bZiYcxVomQ/pIgYwKBgQC2IDYQwwwsBEgwld3zFYwus3m8+iJ1y9RZ\n3UxjbH16gO/blWSTQHgMCEvaLAOKKTCxGpoON0re3N7J+wHjcO2k3uO64duhDN2U\neHdB79ROkJiqTksjRab65hWsU3hOHyKPpLrGCIEItoaLt1uPtrUnC0vb1EzAlbU3\nH7Y9augjmwKBgC5D+9y7mECq0fP+fDw5Y69ioq+z9k7VuxSbGZPKucgKvbJMOZ2Z\nxuXxflraFJoABt6ZOYp+xYHQcHZpkuOFnxonqBo54Q9TTvn0WEAdEAF809iubvBd\nIMfXNKO6O/0lTw2Mq/0E0smg2EYbldLZR1ZV+o20DKC5vtF8cnsA69DdAoGADrQd\nCU9l7SvPVDTVPWnQ7nhI7MvY+l+hXjvyjdhVbQ15z+WIwCalSntk/FEvW/klWDcI\nlvs5zTJRvkbIiT81wGjKQ+02GRN71B/BqQ4eutULrjwx7sAR0hG/UDFQ9iWnWad3\n+ML4/+YUiLUd7EVY7LUJw86o/6dWgQPLZ7v4z98CgYEA1Hqw67yGSsQwlj0saHRZ\n1BU2l/iDO8re0MP7C/nlgMfpPQREOfblvNqib2R7t17edFsCkopQvgd/G9tWZyVB\nfZBbVL0zkgxTVjW4UNSddg/M3F9cHawq2oy9fQiiGrD36dVod2tVvhP0TmjwNQAf\naeTIVJfxOwKg056oQbIp/DY=\n-----END PRIVATE KEY-----\n",
+    "client_email": "omaope-vision@omaope-vision.iam.gserviceaccount.com",
+    "client_id": "114857028824845408472",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/omaope-vision%40omaope-vision.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
